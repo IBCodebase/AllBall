@@ -185,16 +185,166 @@ class PlayerStatTools:
         # players, the codes go as follows
         # 1 = getRecentSeasonGames
         # 2 = getCareerGames
+        # 3 = getRecentSeasonPoints
+        # 4 = getCareerPoints
+        # 5 = getRecentSeasonTotalRebounds
+        # 6 = getCareerTotalRebounds
+        # 7 = getRecentSeasonAssists
+        # 8 = getCareerAssists
+        # 9 = getRecentSeasonFGP
+        # 10 = getCareerFGP
+        # 11 = getRecentSeason3PointFGP
+        # 12 = getCareer3PointFGP
+        # 13 = getRecentSeasonFGP
+        # 14 = getCareerFGP
+        # 15 = getRecentSeasonEFGP
+        # 16 = getCareerEFGP
 
+        returnArray = []
         if (methodCode == 1):
-            returnArray = []
             for player in playerArray:
                 returnArray.append(PlayerStatTools.getRecentSeasonGames(player))
                 time.sleep(waitTime)
             return returnArray
         if (methodCode == 2):
-            returnArray = []
             for player in playerArray:
                 returnArray.append(PlayerStatTools.getCareerGames(player))
                 time.sleep(waitTime)
+            return returnArray
+        if (methodCode == 3):
+            for player in playerArray:
+                returnArray.append(PlayerStatTools.getRecentSeasonPoints(player))
+                time.sleep(waitTime)
+            return returnArray
+        if (methodCode == 4):
+            for player in playerArray:
+                returnArray.append(PlayerStatTools.getCareerPoints(player))
+                time.sleep(waitTime)
+            return returnArray
+        if (methodCode == 5):
+            for player in playerArray:
+                returnArray.append(PlayerStatTools.getRecentSeasonTotalRebounds(player))
+                time.sleep(waitTime)
+            return returnArray
+        if (methodCode == 6):
+            for player in playerArray:
+                returnArray.append(PlayerStatTools.getCareerTotalRebounds(player))
+                time.sleep(waitTime)
+            return returnArray
+        if (methodCode == 7):
+            for player in playerArray:
+                returnArray.append(PlayerStatTools.getRecentSeasonAssists(player))
+                time.sleep(waitTime)
+            return returnArray
+        if (methodCode == 8):
+            for player in playerArray:
+                returnArray.append(PlayerStatTools.getCareerAssists(player))
+                time.sleep(waitTime)
+            return returnArray
+        if (methodCode == 9):
+            for player in playerArray:
+                returnArray.append(PlayerStatTools.getRecentSeasonFGP(player))
+                time.sleep(waitTime)
+            return returnArray
+        if (methodCode == 10):
+            for player in playerArray:
+                returnArray.append(PlayerStatTools.getCareerFGP(player))
+                time.sleep(waitTime)
+            return returnArray
+        if (methodCode == 11):
+            for player in playerArray:
+                returnArray.append(PlayerStatTools.getRecentSeason3PointFGP(player))
+                time.sleep(waitTime)
+            return returnArray
+        if (methodCode == 12):
+            for player in playerArray:
+                returnArray.append(PlayerStatTools.getCareer3PointFGP(player))
+                time.sleep(waitTime)
+            return returnArray
+        if (methodCode == 13):
+            for player in playerArray:
+                returnArray.append(PlayerStatTools.getRecentSeasonFTP(player))
+                time.sleep(waitTime)
+            return returnArray
+        if (methodCode == 14):
+            for player in playerArray:
+                returnArray.append(PlayerStatTools.getCareerFTP(player))
+                time.sleep(waitTime)
+            return returnArray
+        if (methodCode == 15):
+            for player in playerArray:
+                returnArray.append(PlayerStatTools.getRecentSeasonEFTP(player))
+                time.sleep(waitTime)
+            return returnArray
+        if (methodCode == 16):
+            for player in playerArray:
+                returnArray.append(PlayerStatTools.getCareerEFTP(player))
+                time.sleep(waitTime)
+            return returnArray
+
+    def applyMethodToGroupHtmlArray(methodCode, htmlArray):
+        returnArray = []
+        if (methodCode == 1):
+            for html in htmlArray:
+                returnArray.append(PlayerStatTools.getRecentSeasonGames(html))
+            return returnArray
+        if (methodCode == 2):
+            for html in htmlArray:
+                returnArray.append(PlayerStatTools.getCareerGames(html))
+            return returnArray
+        if (methodCode == 3):
+            for html in htmlArray:
+                returnArray.append(PlayerStatTools.getRecentSeasonPoints(html))
+            return returnArray
+        if (methodCode == 4):
+            for html in htmlArray:
+                returnArray.append(PlayerStatTools.getCareerPoints(html))
+            return returnArray
+        if (methodCode == 5):
+            for html in htmlArray:
+                returnArray.append(PlayerStatTools.getRecentSeasonTotalRebounds(html))
+            return returnArray
+        if (methodCode == 6):
+            for html in htmlArray:
+                returnArray.append(PlayerStatTools.getCareerTotalRebounds(html))
+            return returnArray
+        if (methodCode == 7):
+            for html in htmlArray:
+                returnArray.append(PlayerStatTools.getRecentSeasonAssists(html))
+            return returnArray
+        if (methodCode == 8):
+            for html in htmlArray:
+                returnArray.append(PlayerStatTools.getCareerAssists(html))
+            return returnArray
+        if (methodCode == 9):
+            for html in htmlArray:
+                returnArray.append(PlayerStatTools.getRecentSeasonFGP(html))
+            return returnArray
+        if (methodCode == 10):
+            for html in htmlArray:
+                returnArray.append(PlayerStatTools.getCareerFGP(html))
+            return returnArray
+        if (methodCode == 11):
+            for html in htmlArray:
+                returnArray.append(PlayerStatTools.getRecentSeason3PointFGP(html))
+            return returnArray
+        if (methodCode == 12):
+            for html in htmlArray:
+                returnArray.append(PlayerStatTools.getCareer3PointFGP(html))
+            return returnArray
+        if (methodCode == 13):
+            for html in htmlArray:
+                returnArray.append(PlayerStatTools.getRecentSeasonFTP(html))
+            return returnArray
+        if (methodCode == 14):
+            for html in htmlArray:
+                returnArray.append(PlayerStatTools.getCareerFTP(html))
+            return returnArray
+        if (methodCode == 15):
+            for html in htmlArray:
+                returnArray.append(PlayerStatTools.getRecentSeasonEFTP(html))
+            return returnArray
+        if (methodCode == 16):
+            for html in htmlArray:
+                returnArray.append(PlayerStatTools.getCareerEFTP(html))
             return returnArray
